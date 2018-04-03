@@ -1,6 +1,6 @@
 <form novalidate [formGroup]="form">
     <mat-form-field>
-        <input matInput placeholder="characters" formControlName="characters">
+        <input matInput placeholder="Type Hebrew chars to calculate Gimatria" formControlName="characters">
         <mat-error *ngIf="form.controls.characters.invalid && form.controls.characters.dirty">Invalid action</mat-error>
         <mat-error *ngIf="!form.controls.characters.dirty">Action is required</mat-error>
     </mat-form-field>

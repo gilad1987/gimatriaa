@@ -8,12 +8,14 @@ import {AppComponent} from './app.component';
 
 import {GimatriaService} from './services/gimatria/gimatria.service';
 import {SearchComponent} from './components/search/search.component';
+import { GimatriaComponent } from './components/gimatria/gimatria.component';
 
 
 @NgModule({
     declarations: [
         AppComponent,
         SearchComponent,
+        GimatriaComponent,
     ],
     imports: [
         BrowserModule,
