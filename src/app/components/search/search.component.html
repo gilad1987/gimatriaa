@@ -1,4 +1,10 @@
-<form>
-    <input type="text" placeholder="הכנס מילים לחישוב הגימטריה">
-    <button type="submit">search</button>
+<form novalidate [formGroup]="form">
+    <mat-form-field>
+        <input matInput placeholder="characters" formControlName="characters">
+        <mat-error *ngIf="form.controls.characters.invalid && form.controls.characters.dirty">Invalid action</mat-error>
+        <mat-error *ngIf="!form.controls.characters.dirty">Action is required</mat-error>
+    </mat-form-field>
 </form>
+
+<button mat-button (click)="search()" [disabled]="form.invalid">Copy to clipboard</button>
+<button mat-raised-button (click)="resetForm()" [disabled]="!form.dirty">Reset!</button>
