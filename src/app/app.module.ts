@@ -4,13 +4,13 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 
 import {GimatriaService} from './services/gimatria/gimatria.service';
-import {SearchComponent} from './components/search/search/search.component';
+import {SearchComponent} from './components/search/search.component';
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        SearchComponent
+        SearchComponent,
     ],
     imports: [
         BrowserModule
