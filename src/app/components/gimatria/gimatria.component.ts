@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-gimatria',
-  templateUrl: './gimatria.component.html',
-  styleUrls: ['./gimatria.component.css']
+    selector: 'app-gimatria',
+    templateUrl: './gimatria.component.html',
+    styleUrls: ['./gimatria.component.css']
 })
 export class GimatriaComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    handelSearch(event) {
+        console.log(event);
+    }
 
 }

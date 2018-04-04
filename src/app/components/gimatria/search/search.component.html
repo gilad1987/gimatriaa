@@ -6,5 +6,5 @@
     </mat-form-field>
 </form>
 
-<button mat-button (click)="search()" [disabled]="form.invalid">Copy to clipboard</button>
+<button mat-button (click)="onSearch(form.controls.characters.value)" [disabled]="form.invalid">Search</button>
 <button mat-raised-button (click)="resetForm()" [disabled]="!form.dirty">Reset!</button>

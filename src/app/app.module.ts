@@ -7,8 +7,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppComponent} from './app.component';
 
 import {GimatriaService} from './services/gimatria/gimatria.service';
-import {SearchComponent} from './components/search/search.component';
-import { GimatriaComponent } from './components/gimatria/gimatria.component';
+import {SearchComponent} from './components/gimatria/search/search.component';
+import {GimatriaComponent} from './components/gimatria/gimatria.component';
+import {SearchResultsComponent} from './components/gimatria/search-results/search-results.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { GimatriaComponent } from './components/gimatria/gimatria.component';
         AppComponent,
         SearchComponent,
         GimatriaComponent,
+        SearchResultsComponent,
     ],
     imports: [
         BrowserModule,
